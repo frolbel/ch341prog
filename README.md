@@ -1,6 +1,6 @@
 Ch341Prog
 ============
-A simple command line tool(programmer) interfacing with ch341a under Linux OS.
+A simple command line tool(programmer) interfacing with ch341a under Linux OS and macOS.
 
 Description
 ------------
@@ -34,3 +34,9 @@ Speed Test
 -----------
  * read a 8M flash(W25Q64) costs 101.840 seconds
  * write to an 8M flash(W25Q64) costs 158.811 seconds
+
+Linux Permissions
+------------------
+To ensure the CH341 programmer will be set up with proper permissions on a Linux computer, run the following command to install a udev rule file into /etc/udev/rules.d:
+
+`sudo make install-udev-rule`
